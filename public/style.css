@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+}
+
+.main .main_left{
+    flex: 0.8;
+    display: flex;
+    flex-direction: column;
+}
+
+.main .main_left .main_videos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    background: black;
+}
+
+.main .main_left .main_controls{
+    display: flex;
+    background: #1C1E21;
+    color: #D2D2D2;
+    padding: 5px;
+   justify-content: space-between;
+}
+
+.main .main_left .main_controls .main_controls_block{
+    display: flex;
+    align-items: center;
+}
+
+.main .main_left .main_controls .main_controls_block .main_controls_button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 10px;
+    min-width: 80px;
+    cursor: pointer;
+}
+
+.main .main_left .main_controls .main_controls_block .main_controls_button:hover{
+    background-color: #343434;
+    border-radius: 5px;
+}
+
+.main .main_left .main_controls .main_controls_block .main_controls_button i{
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.main .main_left .main_controls .main_controls_block .main_controls_button span{
+    font-size: 15px;
+}
+
+.leave_meeting{
+    color: #EB534B;
+} 
+
+.main .main_right{
+    flex: 0.2;
+    background: #242324;
+    display: flex;
+    flex-direction: column;
+    color: #f5f5f5;
+    border-left: 1px solid #3d3d42;
+}
+
+.main .main_right .main_header{
+    text-align: center;
+    padding-top: 16px;
+}
+
+.main .main_right .main_chat_window{
+    flex-grow: 1;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.main .main_right .main_chat_window::-webkit-scrollbar{
+    display: none;
+}
+
+.main .main_right .main_message_container{
+    padding: 27px 13px;
+    display: flex;
+}
+
+.main .main_right .main_message_container input{
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #F5F5F5;
+}
+
+#video-grid{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+}
+
+video{
+    height: 300px;
+    width: 400px;
+    object-fit: cover;
+}
+
+ul{
+    list-style: none;
+}
+
+.unmute,
+.stop_video{
+    color: #CC3B33;
+}
